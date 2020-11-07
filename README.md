@@ -10,18 +10,19 @@ It could be used along with all video conferencing tools - Google meet, Zoom, Bl
 
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>  <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>  <img src="https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white"/>  <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"/>  <img src="https://img.shields.io/badge/adobe%20photoshop%20-%2331A8FF.svg?&style=for-the-badge&logo=adobe%20photoshop&logoColor=white"/> <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> <img src ="https://img.shields.io/badge/sqlite-%2307405e.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>
 
-- **Frontend:** React JS
-- **Backend:** Django, NodeJS
+- **Frontend:** ReactJS
+- **Backend:** Django
 - **Version Control:** Git and GitHub
 - **Hosting:** Heroku, Netlify
-- **Machine Learning:** Python, Google Collab, Jupyter Notebooks
+- **Machine Learning:** Python
 - **External APIs:** Speech to Text(Microsoft Azure)
-- **Code Editor**: VS Code
+- **Code Editor and tools**: VS Code, Google Collab, Jupyter Notebooks
 
 ## Features:
 - [x] Remove the Distraction of Note-Taking
 - [x] Reduce Ineffective Meetings
 - [x] Help People Do Their Best Work
+- [x] Get MoM for any offline meeting
 - [ ] Can be used with any video conferencing tool
 - [x] Automatically creates a meeting summary after each meeting
 - [ ] Can be used simply as extensions/desktop app & integrations to various apps
@@ -53,9 +54,9 @@ It could be used along with all video conferencing tools - Google meet, Zoom, Bl
 
 | S.No. | Name | Role | GitHub Username:octocat: |
 | --------------- | --------------- | --------------- | --------------- |
-| 1. | Rajat Verma | Frontend Development | [@rajat2502](https://github.com/rajat2502) |
-| 2. | Shristi Singh | UI Designer/Frontend Developer | [@shristisingh29](https://github.com/shristisingh29)  |
-| 3. | Prateek Maheshwari | Backendend Developer| [@friskycodeur](https://github.com/friskycodeur)  |
-| 3. | Aditya Kumar Gupta | Machine Learning | [@geekquad](https://github.com/geekquad)  |
+| 1. | Rajat Verma | Frontend Developer | [@rajat2502](https://github.com/rajat2502) |
+| 2. | Shristi Singh | UI Designer | [@shristisingh29](https://github.com/shristisingh29)  |
+| 3. | Prateek Maheshwari | Backend Developer| [@friskycodeur](https://github.com/friskycodeur)  |
+| 3. | Aditya Kumar Gupta | Machine Learning Engineer | [@geekquad](https://github.com/geekquad)  |
 
 
