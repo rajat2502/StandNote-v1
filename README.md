@@ -18,6 +18,7 @@ The theme of our project idea is **Networking and Productivity**. We are reducin
 
 ## ScreenShots:
 <img src="https://user-images.githubusercontent.com/42200276/98467565-10aa3f00-21fc-11eb-8057-281313341329.gif" />
+<img src="https://user-images.githubusercontent.com/42200276/98467695-b198fa00-21fc-11eb-9968-c9a15740db04.gif" />
 
 ## Tech Stack:
 
