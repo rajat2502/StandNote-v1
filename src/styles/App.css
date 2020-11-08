@@ -1,0 +1,10 @@
+button:focus {
+  outline: none;
+}
+
+.App {
+  background: #48bb78;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}

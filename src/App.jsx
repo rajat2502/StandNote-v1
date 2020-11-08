@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import * as sdk from 'microsoft-cognitiveservices-speech-sdk';
+import 'styles/App.css';
+
+import Button from 'components/Button';
 
 function App() {
   const [text, setText] = useState('');
@@ -11,69 +14,75 @@ function App() {
   );
 
   const audioConfig = sdk.AudioConfig.fromDefaultMicrophoneInput();
-  const recognizer = useMemo(() => new sdk.SpeechRecognizer(speechConfig, audioConfig), [audioConfig, speechConfig]);
+  let recognizer = useMemo(
+    () => new sdk.SpeechRecognizer(speechConfig, audioConfig),
+    [audioConfig, speechConfig]
+  );
 
   const startSpeaking = useCallback(() => {
-    setIsDisabled(true)
+    setIsDisabled(true);
     recognizer.startContinuousRecognitionAsync();
-  }, [recognizer])
+  }, [recognizer]);
 
-  const stopSpeaking  = useCallback(() => {
-    setIsDisabled(false)
+  const stopSpeaking = useCallback(() => {
+    setIsDisabled(false);
     recognizer.stopContinuousRecognitionAsync();
-  }, [recognizer])
+  }, [recognizer]);
 
   useEffect(() => {
     recognizer.recognizing = (s, e) => {
       console.log(`RECOGNIZING: Text=${e.result.text}`);
     };
-  
+
     recognizer.recognized = (s, e) => {
-      setText(state => state + e.result.text)
+      setText((state) => state + e.result.text);
     };
-  
+
     recognizer.canceled = (s, e) => {
       console.log(`CANCELED: Reason=${e.reason}`);
-      setIsDisabled(false)
+      setIsDisabled(false);
       recognizer.stopContinuousRecognitionAsync();
     };
-  
+
     recognizer.sessionStopped = (s, e) => {
-      console.log("\n Session stopped event.");
+      console.log('\n Session stopped event.');
       recognizer.stopContinuousRecognitionAsync();
     };
-  }, [recognizer])
-  
+  }, [recognizer]);
+
   return (
-    <div className="App">
+    <div className='App bg-green-500 text-white'>
       <h1>Hello</h1>
-      <button onClick={startSpeaking} disabled={isDisabled}>Start Speaking</button>
-      <button onClick={stopSpeaking} disabled={!isDisabled}>Stop Speaking</button>
+      <Button onClick={startSpeaking} disabled={isDisabled}>
+        Start Speaking
+      </Button>
+      <Button onClick={stopSpeaking} disabled={!isDisabled}>
+        Stop Speaking
+      </Button>
       <p>Text: {text}</p>
-      <div id="waveform"></div>
+      <div id='waveform'></div>
     </div>
   );
 }
 
 export default App;
 
- 
-  // useEffect(() => {
-  //   var wavesurfer = window.WaveSurfer.create({
-  //     container: '#waveform',
-  //     waveColor: 'black',
-  //     interact: false,
-  //     cursorWidth: 0,
-  //     plugins: [window.WaveSurfer.microphone.create()],
-  //   });
+// useEffect(() => {
+//   var wavesurfer = window.WaveSurfer.create({
+//     container: '#waveform',
+//     waveColor: 'black',
+//     interact: false,
+//     cursorWidth: 0,
+//     plugins: [window.WaveSurfer.microphone.create()],
+//   });
 
-  //   wavesurfer.microphone.on('deviceReady', function (stream) {
-  //     console.log('Device ready!', stream);
-  //   });
-  //   wavesurfer.microphone.on('deviceError', function (code) {
-  //     console.warn('Device error: ' + code);
-  //   });
+//   wavesurfer.microphone.on('deviceReady', function (stream) {
+//     console.log('Device ready!', stream);
+//   });
+//   wavesurfer.microphone.on('deviceError', function (code) {
+//     console.warn('Device error: ' + code);
+//   });
 
-  //   // start the microphone
-  //   wavesurfer.microphone.start();
-  // }, []);
+//   // start the microphone
+//   wavesurfer.microphone.start();
+// }, []);
