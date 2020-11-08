@@ -33,12 +33,7 @@ const Navbar = () => {
         >
           Our Solution
         </a>
-        <a
-          className='font-bold mx-2 transition duration-200 ease-in-out hover:underline'
-          href='#'
-        >
-          Dashboard
-        </a>
+        <Link to='/'>Dashboard</Link>
         <a
           className='font-bold mx-2 transition duration-200 ease-in-out hover:underline'
           href='#idea'
