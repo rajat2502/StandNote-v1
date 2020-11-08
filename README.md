@@ -98,6 +98,29 @@ $ python manage.py createsuperuser
 ```
 $ python manage.py runserver
 ```
+
+### Machine Learning 
+
+All programs are in python as well as in Jupyter Notebook/ Google Colab.
+To install Jupyter notebook-
+```
+pip install jupyterlab
+```
+```
+pip install notebook
+```
+To open Jupyter notebook, simply type
+```
+jupyter notebook 
+```
+- Install dependencies using
+```
+$ pip install -r requirements.txt
+```
+For more information and documentation of Jupyter Notebook, visit [Project Jupyter](https://jupyter.org/)
+
+
+
 ## How to Get Started?
 
 #### GitHub Repository Structure
