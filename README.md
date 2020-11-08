@@ -36,13 +36,68 @@ It could be used along with all video conferencing tools - Google meet, Zoom, Bl
 
 ## Links:
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8e2612ff228ec1a61a5d)
 [![Code Quality](https://img.shields.io/badge/code%20quality-A-brightgreen)](https://github.com/rajat2502/StandNote)
 [![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/rajat2502/StandNote)
 [![Build Passing](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/rajat2502/StandNote)
-
 - **Frontend**: [https://github.com/rajat2502/StandNote](https://github.com/rajat2502/StandNote)
 - **Backend**: [https://standnotes.herokuapp.com/api/](https://standnotes.herokuapp.com/api/)
+- **Postman Collection**: [https://www.getpostman.com/collections/8e2612ff228ec1a61a5d](https://www.getpostman.com/collections/8e2612ff228ec1a61a5d)
+- **Postman Docs**: [https://documenter.getpostman.com/view/10608582/TVeiBpnd](https://documenter.getpostman.com/view/10608582/TVeiBpnd)
 
+## How to run locally?
+### Frontend (React App)
+- Fork and Clone the repo using
+```
+$ git clone https://github.com/rajat2502/StandNote.git
+$ cd StandNote
+```
+- Install node dependencies
+```
+$ npm install
+```
+- Run Server at localhost using
+```
+$ npm start
+```
+### Backend (Django App)
+- Fork and Clone the repo using
+```
+$ git clone https://github.com/rajat2502/StandNote.git
+$ cd StandNote
+```
+- Change Branch to `backend` using 
+```
+$ git checkout backend
+```
+- Setup Virtual environment
+```
+$ python3 -m venv env
+```
+- Activate the virtual environment
+```
+$ source env/bin/activate
+```
+- Install dependencies using
+```
+$ pip install -r requirements.txt
+```
+- Make migrations using
+```
+$ python manage.py makemigrations
+```
+- Migrate Database
+```
+$ python manage.py migrate
+```
+- Create a superuser
+```
+$ python manage.py createsuperuser
+```
+- Run server using
+```
+$ python manage.py runserver
+```
 ## How to Get Started?
 
 #### GitHub Repository Structure
