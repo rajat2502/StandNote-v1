@@ -98,6 +98,36 @@ function Home() {
             className='h-20'
           />
         </div>
+        <p className='pb-12 font-bold text-center text-2xl bg-gray-300 text-green-600'>
+          Our future prospectus includes generating the minutes of the meeting
+          and pushing it directly to the respective channels, boards and
+          repositories. Hence, reducing the manual efforts in generaing and
+          organizing the minutes of a meeting.
+        </p>
+      </div>
+      <div className='p-12 bg-green-700 flex justify-center items-center'>
+        <div className='px-4 w-1/2 ml-10 lg:pr-4'>
+          <h1 className='text-4xl font-bold'>
+            A new way to have your offline/online conversation
+          </h1>
+          <p className='text-xl'>
+            Stay connected to your conversation. Get real-time action items
+            extracted. Grab insights automatically on the fly. Enjoy a live
+            transcript and skyrocket the productivity.
+          </p>
+        </div>
+        <div className='px-4 w-1/2'>
+          <iframe
+            title='standnote'
+            width='600'
+            height='400'
+            className='rounded-lg'
+            src='https://www.youtube.com/embed/VTQ-nlWxWv4'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <Footer />
     </div>
